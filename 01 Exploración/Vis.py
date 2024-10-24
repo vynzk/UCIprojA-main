@@ -11,6 +11,10 @@ from scipy.io import loadmat
 import os
 import pandas as pd
 
+# autoencoder post filtro
+# gráfico de derivación para detección de ruido (similar a compresores)
+# paper de cardiología para entender el problema.
+
 # filtro de paso bajo Butterworth bidireccional
 def butter_lowpass_filter(data, cutoff=1, fs=250, order=2):
     from scipy.signal import butter, filtfilt
